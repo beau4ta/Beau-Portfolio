@@ -1,0 +1,199 @@
+/*The general tag is resetting the css*/
+*{ 
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(211, 211, 211);
+}
+
+/* This is where my name is displayed*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(94, 96, 196);
+}
+
+h1{
+    color: white;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+/*these are the properties for my nav bar*/
+.nav-container {
+    background-color: rgb(111, 166, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+   border-style: outset;
+   border-width: 5px;
+   border-color: gray;
+   word-spacing: 10px;
+}
+.navbar{
+    padding-right: 10px;
+    
+}
+/* this takes away the bullets in my list*/
+nav ul{
+    list-style: none;
+    background-color: rgb(111, 166, 238);
+}
+/* this makes the list horizontal instead of vertical*/
+nav ul li{
+    display: inline;
+}
+/* this changes the properties of the navbar text*/
+nav ul li a{
+padding: 5px;
+color: white;
+text-decoration: none;
+}    
+
+/* this changes the text color when you hover above it*/
+nav ul li a:hover {
+    color: black;
+}
+
+/* this is the image below the header*/
+.image1 {
+    width: 1440px;
+    height: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*this is the container that holds the main part of the document*/
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+  aside {
+    padding: 20px;
+    text-align: right;
+    border-right: 2px solid;
+  }
+
+  .sidebar {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 5px;
+  }
+
+  #Biography {
+      margin-bottom: 600px;
+  }
+
+  #Projects {
+      margin-bottom: 2000px;
+  }
+
+  h2 {
+      font-size: 50px;
+  }
+
+  .section2 {
+    width: 800px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+
+
+  .beau {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: black dotted;
+    border-radius: 20px;
+  }
+  
+  .bio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .projects {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .proj1 {
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  .proj1 header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .proj1 p {
+    text-align: center;
+  }
+  
+  .proj1 img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    width: 50%;
+  }
+  
+  .proj2 {
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  .proj2 header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .proj2 p {
+    text-align: center;
+  }
+  
+  .proj2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+.h3-1 {
+    text-align: center;
+    margin-top: 220px;
+    font-weight: bolder;
+}
+
+.h3-2 {
+    text-align: center;
+    font-weight: bolder;
+}
+ 

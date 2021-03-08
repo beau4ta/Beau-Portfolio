@@ -1,2 +1,9 @@
 # Beau-Portfolio
-rough draft of my first portfolio
+
+**This is a rough draft of my professional portfolio**
+
+
+
+
+
+
