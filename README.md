@@ -29,7 +29,19 @@
 * The projects have placeholder images that change appearence upon hovering above them
 * I created yet another flexbox to position my contact information. 
 * I styled my contact information.
- 
+
+## LINKS
+
+<img src="assets/port1.png">
+<img src="assets/port2.png">
+<img src="assets/port3.png">
+
+### GitHub Repo: 
+https://github.com/beau4ta/Beau-Portfolio
+
+### Live Webpage:
+https://beau4ta.github.io/Beau-Portfolio/
+
 
 
 
