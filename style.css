@@ -72,15 +72,6 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* this creates another flex-box to put the content where i want it*/
-main {
- flex: 4;
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- justify-content: space-between;
-}
-
 /* this creates another flex-box for my side bar*/
   aside {
    flex: 1;
@@ -108,6 +99,15 @@ main {
   border-right: black solid;
   padding: 20px;
   }
+
+/* this creates another flex-box to put the content where i want it*/
+  main {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
 
   /* this changes the font size of my sidebar text*/
   h2 {
