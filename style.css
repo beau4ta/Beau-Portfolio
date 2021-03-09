@@ -1,49 +1,52 @@
-/*The general tag is resetting the css*/
+/*The general tag is resetting the css, and changing the font*/
 *{ 
-    box-sizing: border-box;
     margin: 0px;
     border: 0px;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: rgb(211, 211, 211);
+/*this also resets some css properties*/
+body, html{
+  margin: 0%;
+  height: 100%;
 }
 
-/* This is where my name is displayed*/
-.header{
+/* this is starting my main flex-box properties and changing the background color*/
+  body{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: rgb(94, 96, 196);
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgb(211, 211, 211);
 }
 
+/* This makes the header able to be in its own row on the top, and changes the background color*/
+.header{
+   flex: 1 1 100%;
+  background-color: rgb(94, 96, 196);
+}
+
+/* this modifies the header*/
 h1{
     color: white;
     padding: 5px;
     letter-spacing: 2px;
+    text-align: right;
 }
-/*these are the properties for my nav bar*/
+/* this allows the styling of the nav bar border, and also allows the navbar to have its own row in the flex-box*/
 .nav-container {
-    background-color: rgb(111, 166, 238);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+  flex: 1 1 100%;
+  background-color: rgb(111, 166, 238);
    border-style: outset;
    border-width: 5px;
    border-color: gray;
    word-spacing: 10px;
 }
-.navbar{
-    padding-right: 10px;
-    
-}
-/* this takes away the bullets in my list*/
+
+/* this takes away the bullets in my list, changes the background color, and aligns the text*/
 nav ul{
     list-style: none;
     background-color: rgb(111, 166, 238);
+    text-align: right;
 }
 /* this makes the list horizontal instead of vertical*/
 nav ul li{
@@ -69,58 +72,52 @@ nav ul li a:hover {
     height: auto;
 }
 
-/*this is the container that holds the main part of the document*/
+/* this creates another flex-box to put the content where i want it*/
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-
-.section1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+ flex: 4;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ justify-content: space-between;
 }
 
+/* this creates another flex-box for my side bar*/
   aside {
-    padding: 20px;
-    text-align: right;
-    border-right: 2px solid;
-  }
-
-  .sidebar {
+   flex: 1;
    display: flex;
-   flex-wrap: wrap;
    flex-direction: column;
-   justify-content: space-between;
-   padding: 5px;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   text-align: right;
   }
 
+  /* these ID's adjust the space between them, and add a border to the right*/
   #Biography {
-      margin-bottom: 600px;
+    flex: 0.5;
+    border-right: black solid;
+    padding: 20px;
   }
 
   #Projects {
-      margin-bottom: 2000px;
+   flex: 1;
+   border-right: black solid;
+   padding: 20px;
   }
 
+  #Contact {
+  border-right: black solid;
+  padding: 20px;
+  }
+
+  /* this changes the font size of my sidebar text*/
   h2 {
       font-size: 50px;
   }
 
-  .section2 {
-    width: 800px;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: space-between;
-  }
-
-
+  /* this positions the image of myself while styling some borders*/
   .beau {
-    display: flex;
-    width: 50%;
+    flex: 1;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -128,72 +125,101 @@ main {
     border-radius: 20px;
   }
   
+  /*this positions the paragraph of my info*/
   .bio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex: 1;
+    padding-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
   }
 
+  /* this is a new flex-box for my projects */
   .projects {
-    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+    flex-wrap: wrap;
+    justify-content: space-around;
   
+  }
+  /* this positions my first project at the top while also putting text in the center of the image*/
   .proj1 {
-    padding: 10px;
-    margin: 20px;
-  }
-  
-  .proj1 header {
-    text-align: center;
+    flex: 4 1 100%;
+    display: block;
     padding: 20px;
-  }
-  
-  .proj1 p {
+    position: relative;
     text-align: center;
+    color: black;
   }
-  
+
+  /* this is for putting the text in the center of the images*/
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* this centers the image and places a border around it*/
   .proj1 img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    width: 50%;
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: dotted rgb(111, 166, 238);
+    border-radius: 50px;
   }
-  
+
+  /* this makes the image change opacity when hovered on*/
+  .proj1 img:hover {
+    opacity: 0.2;
+  }
+ 
+  /* this positions the other 4 projects and centers text over the images*/
   .proj2 {
-    padding: 10px;
-    margin: 20px;
-  }
-  
-  .proj2 header {
+    flex: 50%;
+    position: relative;
     text-align: center;
-    padding: 20px;
+    color: black;
   }
-  
-  .proj2 p {
-    text-align: center;
-  }
-  
+
+  /* this centers the image and places a border around it*/
   .proj2 img {
+    width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    border: dotted rgb(111, 166, 238);
+    border-radius: 50px;
   }
 
-.h3-1 {
-    text-align: center;
-    margin-top: 220px;
-    font-weight: bolder;
-}
+  /* this makes the image change opacity when hovered on*/
+  .proj2 img:hover {
+    opacity: 0.2;
+  }
 
-.h3-2 {
+  /* this creates another flex-box for my contact info*/
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+
+  /* this positions my contact information and styles the text*/
+  .con1 {
+    flex: 1;
+    margin-top: 20px;
+    padding: 50px;
     text-align: center;
-    font-weight: bolder;
-}
- 
+    font-size: xx-large;
+    border-top: solid rgb(111, 166, 238);
+  }
+
+  .con2{
+    flex: 1;
+    margin-top: 20px;
+    padding: 50px;
+    text-align: center;
+    font-size: xx-large;
+    border-top: solid rgb(111, 166, 238);
+  }
